@@ -1,0 +1,35 @@
+{
+  "name": "simple-boilerplate",
+  "version": "1.0.0",
+  "description": "Basic N.E.R.D. Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build-server && npm run build-client",
+    "build-server": "babel src/server --out-dir ./dist",
+    "build-client": "babel src/client --copy-files --out-dir ./dist/public",
+    "start": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucysutton91/simple-boilerplate.git"
+  },
+  "keywords": [
+    "Node",
+    "React",
+    "Express"
+  ],
+  "author": "Lucy Sutton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucysutton91/simple-boilerplate/issues"
+  },
+  "homepage": "https://github.com/lucysutton91/simple-boilerplate#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
